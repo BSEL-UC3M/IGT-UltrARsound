@@ -1,4 +1,4 @@
-#IGT-UltrARsound
+# IGT-UltrARsound
 
 ## Overview
 This Unity project is based on the paper [UltrARsound: in situ visualization of live ultrasound images using HoloLens 2](https://link.springer.com/article/10.1007/s11548-022-02695-z) and shows 
