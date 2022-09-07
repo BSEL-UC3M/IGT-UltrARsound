@@ -14,7 +14,13 @@ This Unity project is based on the paper [UltrARsound: in situ visualization of 
 **Note:** There might be other free OpenCV libraries for Unity and HoloLens but they might use different names for methods etc.
 3. Open the Unity project and import OpenCV for Unity (there should be no errors after importing)
 4. Use the Mixed Reality Feature Tool and import MRTK Foundation Feature
-5. Import both prefabs in the Prefabs folder 
+5. Open the scene "UltrARsound"
+6. Import both prefabs in the Prefabs folder
+7. Under "Buttons" --> "ButtonCollection"
+	- "Button4" in Events and OnClick add the USimageStreamer and select the function OpenIGTLinkConnect.ConnectUS method
+	- "Button5" in Events and OnClick add the RigidBodyTrackingController and select the function RigidBodyTracker.UseKalmanFilter method
+	- "Button6" in Events and OnClick add the RigidBodyTrackingController and select the function RigidBodyTracker.StartTrackingCoroutine method
+
  
 
 
