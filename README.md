@@ -8,12 +8,14 @@ This Unity project is based on the paper [UltrARsound: in situ visualization of 
 
 **Note:** The repository is still work in progress
 
-## Prerequisites and dependencies
-- [Enable research mode and allow access to sensor stream](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/advanced-concepts/research-mode#enabling-research-mode-hololens-first-gen-and-hololens-2)
-- [OpenCV for Unity from Asset Store](https://assetstore.unity.com/packages/tools/integration/opencv-for-unity-21088)
-**Note:** There might be other free OpenCV libraries for Unity and HoloLens.
-- Stream Recorder?
-- Visual Studio 2019 or higher with UWP support
+## Prerequisites and setting the project up
+1. [Enable research mode and allow access to sensor stream](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/advanced-concepts/research-mode#enabling-research-mode-hololens-first-gen-and-hololens-2)
+2. [OpenCV for Unity from Asset Store](https://assetstore.unity.com/packages/tools/integration/opencv-for-unity-21088)
+**Note:** There might be other free OpenCV libraries for Unity and HoloLens but they might use different names for methods etc.
+3. Open the Unity project and import OpenCV for Unity (there should be no errors after importing)
+4. Use the Mixed Reality Feature Tool and import MRTK Foundation Feature
+5. Import both prefabs in the Prefabs folder 
+ 
 
 
 ## General information for usage
