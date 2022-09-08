@@ -8,13 +8,19 @@ This Unity project is based on the paper [UltrARsound: in situ visualization of 
 
 **Note:** The repository is still work in progress
 
-## Prerequisites and setting the project up
+## Prerequisites and setting up the project
 1. [Enable research mode and allow access to sensor stream](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/advanced-concepts/research-mode#enabling-research-mode-hololens-first-gen-and-hololens-2)
 2. [OpenCV for Unity from Asset Store](https://assetstore.unity.com/packages/tools/integration/opencv-for-unity-21088)
 **Note:** There might be other free OpenCV libraries for Unity and HoloLens but they might use different names for methods etc.
 3. Open the Unity project and import OpenCV for Unity (there should be no errors after importing)
 4. Use the Mixed Reality Feature Tool and import MRTK Foundation Feature
-5. Import both prefabs in the Prefabs folder 
+5. Open the scene "UltrARsound"
+6. Import both prefabs in the Prefabs folder
+7. In the hierarchy --> "Buttons" --> "ButtonCollection"
+	- "Button4" in Events and OnClick add the USimageStreamer and select the function OpenIGTLinkConnect.ConnectUS method
+	- "Button5" in Events and OnClick add the RigidBodyTrackingController and select the function RigidBodyTracker.UseKalmanFilter method
+	- "Button6" in Events and OnClick add the RigidBodyTrackingController and select the function RigidBodyTracker.StartTrackingCoroutine method
+
  
 
 
@@ -22,7 +28,7 @@ This Unity project is based on the paper [UltrARsound: in situ visualization of 
 
 - The script *RigidBodyTracker.cs* performs the actual tracking of the spheres and calculates the pose of the rigid body. Within the method *defineRigidBody()*, you can define the positions of your spheres with respect to your reference frame.
 - The script *OpenIGTLinkConnect.cs* performs the streaming and visualization of ultrasound images. It is attached to the *USimage* game object and in the inspector it is possible to adjust ip address and port number.
-- Once the application is deployed to HoloLens 2 and the app is started, you should the live stream of the active brightness image. Only if you can see the live stream, you can be sure that the tracking will work. 
+- Once the application is deployed to HoloLens 2 and the app is started, you should see a live stream of the active brightness camera. Only if you can see the live stream, you can be sure that the tracking will work. 
 - The user interface with three buttons enables to start streaming the ultrasound images, start the tracking and turn on and off the Kalman filter.
  
 - For further questions, please contact vonhaxthausen@rob.uni-luebeck.de
