@@ -32,7 +32,7 @@ This Unity project is based on the paper [UltrARsound: in situ visualization of 
 - The user interface with three buttons enables to start streaming the ultrasound images, start the tracking and turn on and off the Kalman filter.
 - The following repository contains the project to create the DLL, which gives access to the depth camera, the pose of the left front camera etc..  https://github.com/felixvh/HL2ResearchMode_Unity_Plugin
  
-- For further questions, please contact vonhaxthausen@rob.uni-luebeck.de
+- For further questions, please contact felixvhaxthausen@web.de
 
 ## Citation
 If you find our work useful, please consider citing our paper
