@@ -30,6 +30,7 @@ This Unity project is based on the paper [UltrARsound: in situ visualization of 
 - The script *OpenIGTLinkConnect.cs* performs the streaming and visualization of ultrasound images. It is attached to the *USimage* game object and in the inspector it is possible to adjust ip address and port number.
 - Once the application is deployed to HoloLens 2 and the app is started, you should see a live stream of the active brightness camera. Only if you can see the live stream, you can be sure that the tracking will work. 
 - The user interface with three buttons enables to start streaming the ultrasound images, start the tracking and turn on and off the Kalman filter.
+- The following repository contains the project to create the DLL, which gives access to the depth camera, the pose of the left front camera etc..  https://github.com/felixvh/HL2ResearchMode_Unity_Plugin
  
 - For further questions, please contact vonhaxthausen@rob.uni-luebeck.de
 
